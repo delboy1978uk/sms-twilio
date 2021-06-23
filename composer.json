@@ -16,7 +16,11 @@
     },
     "autoload":{
         "psr-4":{
-            "Del\\":"src/"
+            "Bone\\Sms\\Provider\\": "src/"
         }
+    },
+    "require": {
+        "delboy1978uk/sms": "^1.0.0",
+        "twilio/sdk": "^6.25"
     }
 }

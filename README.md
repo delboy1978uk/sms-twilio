@@ -8,7 +8,7 @@ composer require delboy1978uk/sms-twilio
 ## usage
 Instantiate the adapter and pass it into the `SmsService`constructor.
 ```php
-use Bone\Sms\Adapter\Twilio
+use Bone\Sms\Adapter\Twilio;
 
 $adapter = new Twilio();
 $service = new SmsService($adapter);
