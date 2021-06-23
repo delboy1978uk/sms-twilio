@@ -1,0 +1,22 @@
+{
+    "name": "delboy1978uk/blank",
+    "description": "A blank project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Derek McLean",
+            "email": "delboy1978uk@gmail.com"
+        }
+    ],
+    "require-dev":{
+        "codeception/codeception":"^4.1",
+        "codeception/module-asserts": "^1.1",
+        "codeception/module-phpbrowser": "^1.0",
+        "codeception/module-filesystem": "^1.0"
+    },
+    "autoload":{
+        "psr-4":{
+            "Del\\":"src/"
+        }
+    }
+}
