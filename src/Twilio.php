@@ -15,14 +15,9 @@ class Twilio implements SmsProviderInterface
      * @param array $settings
      * @throws \Twilio\Exceptions\ConfigurationException
      */
-    public function __construct(array $settings)
+    public function __construct(string $accountSid, string $authToken, string $fromNumber)
     {
-        $username = $settings['username'] ?? '';
-        $password = $settings['password'] ?? '';
-        $accountSid = $settings['accountSid'] ?? '';
-        $region = $settings['region'] ?? '';
-        $fromNumber = $settings['fromNumber'] ?? '';
-        $this->client = new Client($username, $password, $accountSid, $region);
+        $this->client = new Client($accountSid, $authToken);
         $this->fromNumber = $fromNumber;
     }
 
@@ -38,5 +33,7 @@ class Twilio implements SmsProviderInterface
             'from' => $this->fromNumber,
             'body' => $sms
         ]);
+
+        return true;
     }
 }
