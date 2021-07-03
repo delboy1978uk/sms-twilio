@@ -1,6 +1,6 @@
 {
-    "name": "delboy1978uk/blank",
-    "description": "A blank project",
+    "name": "delboy1978uk/sms-twilio",
+    "description": "Twilio adapter for delboy1978uk/sms",
     "license": "MIT",
     "authors": [
         {
