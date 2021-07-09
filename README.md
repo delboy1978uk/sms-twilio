@@ -10,9 +10,9 @@ Instantiate the adapter and pass it into the `SmsService`constructor.
 ```php
 use Bone\Sms\Adapter\Twilio;
 
-$accoundSid = 'XXXXX';
+$accountSid = 'XXXXX';
 $authToken = 'XXXXX';
-$fomNumber = '+3211122233';
+$fromNumber = '+3211122233';
 $adapter = new Twilio($accountSid, $authToken, $fromNumber);
 $service = new SmsService($adapter);
 ```
